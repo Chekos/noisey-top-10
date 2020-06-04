@@ -37,7 +37,7 @@ def limpia_textos(filepath: str = sys.argv[1]):
 if __name__ == "__main__":
     
     filepath_out, filename = limpia_textos(filepath = sys.argv[1])
-    
+
     print("#"*59)
     print("_"*30)
     print(f"Limpiando el archivo {filename}")
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         pass
     print("_"*59)
     print(f"Guardando el archivo {filepath_out}")
-    for i in tqdm(range(5_000_000)):
+    for _ in tqdm(range(5_000_000)):
         pass
     print("#"*59)
     
